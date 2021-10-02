@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Sato Samurais NFT</title>
+    <style>
+        section {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+        }
+
+        html{
+            background-color: rgb(168, 152, 135);
+        }
+
+        body{
+            background-color: rgb(168, 152, 135);
+        }
+
+        h1 {
+            color: rgb(237, 28, 36);
+        }
+
+        @media (max-width: 767px) {
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        /* medium and up screens */
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(25%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%);
+            }
+        }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start {
+            transform: translateX(0);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .card {
+            border: none;
+            display:inline-block;
+            margin: 5pt;
+        }
+
+        .jumbotron {
+            background-image: url("/assets/dojo.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-light" style="background-color: rgb(168, 152, 135);">
+
+    <div class="jumbotron jumbotron-fluid" style="min-height: 400px; background-color: rgb(168, 152, 135);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <br>
+                </div>
+                <div class="col-12 mt-5 text-center">
+                    <img src="/assets/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 text-center mb-5">
+                    <!-- TODO -->
+                    <!-- <a href="" class="btn btn-danger btn-lg" target="_blank" style="background-color: rgb(237, 28, 36);">Go to Contract</a> -->
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="background-color: rgb(237, 28, 36);">Go to Contract</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- caro -->
+    <section id="caro" style="background-color: rgb(168, 152, 135);">
+        <br>
+        <div class="row mx-auto my-5 justify-content-center pb-lg-5" >
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/0.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/1.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/2.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/3.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/4.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/5.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/6.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/7.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/8.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="/assets/9.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- intro team -->
+    <section id="intro" style="background-color: rgb(168, 152, 135); ">
+        <div class="container">
+            <div class="row align-items-center justify-content-center flex-row-reverse">
+                <div class="col-11 col-lg-6 ms-lg-5">
+                    <h1 class="display-6 text-left fw-bold" style="color: rgb(237, 28, 36);">Welcome to the home of the Sato Samurais!</h1>
+                    <h4>These mighty warriors are here to protect your crypto wallet. There are 10,000 unique hand-drawn samurai NFTs and they can be recruited for 0.05 ETH in the contract itself.</h4>
+                </div>
+                <div class="col-10 col-md-8 col-lg-4 my-4 text-center">
+                    <img src="/assets/b.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col align-self-center">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold align-middle" style="color: rgb(237, 28, 36);">The Team</h1>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xxl-6 text-center">
+                    <div class="card-deck"> 
+                        <div class="card" style="background-color: rgba(0, 0, 0, 0.8); max-width: 18rem;" >
+                            <img class="card-img-top" src="/assets/mermaid.jpg" alt="Avatar1">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title text-light">Art Commander</h4>
+                                <a href="https://twitter.com/kseniashikh" class="btn btn-outline-light" target="_blank">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/kseniashikh" class="btn btn-outline-light" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+    
+            
+                        <div class="card" style="background-color: rgba(0, 0, 0, 0.8); max-width: 18rem;">
+                            <img class="card-img-top" src="/assets/clown.jpg" alt="Avatar2">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title text-light">Tech Master</h4>
+                                <a href="https://twitter.com/DjangoMango7" class="btn btn-outline-light" target="_blank">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start ">
+        <section class="d-flex justify-content-center p-4 text-light" style="background-color: rgba(0, 0, 0, 0.8);">
+            <div class="mt-2 me-4 d-none d-lg-block">
+                <span>Get connected with us here:</span>
+            </div>
+            <div>
+                <a href="https://twitter.com/SatoSamurais" class="btn btn-outline-light" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/kseniashikh" class="btn btn-outline-light" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <div class="text-center pb-4 text-light" style="background-color: rgba(0, 0, 0, 0.8);">
+            Go to Ethereum contract:
+            <!-- TODO -->
+            <!-- <a class="text-reset fw-bold" href="" target="_blank"></a> -->
+            <button class="btn text-light p-0" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                Coming soon!
+            </button>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="comingSoonModal" tabindex="-1" role="dialog" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="comingSoonModalLabel">Contract Adress</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Ethereum smart contract is coming soon!</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
